@@ -161,8 +161,7 @@
                 title: "2DHappyTravel",
                 description: "2DHappyTravel",
                 images: [
-                    "assets/images/projects/2dhappytravel/2Dp1.jpg",
-                    "assets/images/projects/2dhappytravel/image2.jpg"
+                    "assets/images/projects/2dhappytravel/2Dp1.png",
                 ],
                 video: "https://youtu.be/VLZAA7F4CW0",
                 content: `
