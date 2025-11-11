@@ -164,7 +164,7 @@
                     "assets/images/projects/2dhappytravel/2Dp1.jpg",
                     "assets/images/projects/2dhappytravel/image2.jpg"
                 ],
-                video: "https://www.youtube.com/watch?v=VLZAA7F4CW0",
+                video: "https://youtu.be/VLZAA7F4CW0",
                 content: `
                     <h3>Description</h3>
                     <p>2DHappyTravel is a 2D side-scrolling game that I developed using Unity Engine. It is a simple game that allows the player to control a character and navigate through a world. Including platforming elements and battle system.</p>
