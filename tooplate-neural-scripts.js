@@ -161,11 +161,10 @@
                 title: "2DHappyTravel",
                 description: "2DHappyTravel",
                 images: [
-                    
-                    "assets/images/projects/2dhappytravel/image1.jpg",
+                    "assets/images/projects/2dhappytravel/2Dp1.jpg",
                     "assets/images/projects/2dhappytravel/image2.jpg"
                 ],
-                video: "assets/videos/projects/2dhappytravel/2DHappyTravelGamePlay.mp4",
+                video: "https://www.youtube.com/watch?v=VLZAA7F4CW0",
                 content: `
                     <h3>Description</h3>
                     <p>2DHappyTravel is a 2D side-scrolling game that I developed using Unity Engine. It is a simple game that allows the player to control a character and navigate through a world. Including platforming elements and battle system.</p>
@@ -308,6 +307,51 @@
             }
         ];
 
+        // Function to extract YouTube video ID and convert to embed URL
+        function getYouTubeEmbedUrl(url) {
+            if (!url) return null;
+            
+            // Check if it's already an embed URL
+            if (url.includes('youtube.com/embed/')) {
+                return url;
+            }
+            
+            // Extract video ID from various YouTube URL formats
+            let videoId = null;
+            
+            // Format: https://www.youtube.com/watch?v=VIDEO_ID
+            const watchMatch = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([^&\n?#]+)/);
+            if (watchMatch) {
+                videoId = watchMatch[1];
+            }
+            
+            // Format: https://www.youtube.com/embed/VIDEO_ID
+            const embedMatch = url.match(/youtube\.com\/embed\/([^&\n?#]+)/);
+            if (embedMatch) {
+                videoId = embedMatch[1];
+            }
+            
+            if (videoId) {
+                // Extract additional parameters if present (like si=...)
+                const urlParams = new URLSearchParams(url.split('?')[1] || '');
+                const siParam = urlParams.get('si');
+                
+                let embedUrl = `https://www.youtube.com/embed/${videoId}`;
+                if (siParam) {
+                    embedUrl += `?si=${siParam}`;
+                }
+                return embedUrl;
+            }
+            
+            return null;
+        }
+
+        // Function to check if URL is YouTube
+        function isYouTubeUrl(url) {
+            if (!url) return false;
+            return url.includes('youtube.com') || url.includes('youtu.be');
+        }
+
         // Open modal function
         function openModal(projectIndex) {
             const project = projectsData[projectIndex];
@@ -320,20 +364,48 @@
             
             // Add video if available
             if (project.video) {
-                const videoElement = document.createElement('video');
-                videoElement.src = project.video;
-                videoElement.controls = true;
-                videoElement.style.width = '100%';
-                videoElement.preload = 'metadata';
-                // error handling
-                videoElement.onerror = function() {
-                    console.error('Video failed to load:', project.video);
-                    const errorMsg = document.createElement('p');
-                    errorMsg.style.color = 'var(--secondary)';
-                    errorMsg.textContent = 'video failed to load';
-                    modalMedia.appendChild(errorMsg);
-                };
-                modalMedia.appendChild(videoElement);
+                if (isYouTubeUrl(project.video)) {
+                    // YouTube video - use iframe
+                    const embedUrl = getYouTubeEmbedUrl(project.video);
+                    if (embedUrl) {
+                        const iframeContainer = document.createElement('div');
+                        iframeContainer.className = 'youtube-video-container';
+                        
+                        const iframe = document.createElement('iframe');
+                        iframe.src = embedUrl;
+                        iframe.title = 'YouTube video player';
+                        iframe.frameBorder = '0';
+                        iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+                        iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+                        iframe.allowFullscreen = true;
+                        iframe.className = 'youtube-embed';
+                        
+                        iframeContainer.appendChild(iframe);
+                        modalMedia.appendChild(iframeContainer);
+                    } else {
+                        console.error('Failed to extract YouTube video ID from:', project.video);
+                        const errorMsg = document.createElement('p');
+                        errorMsg.style.color = 'var(--secondary)';
+                        errorMsg.textContent = 'Invalid YouTube URL';
+                        modalMedia.appendChild(errorMsg);
+                    }
+                } else {
+                    // Regular video file - use video element
+                    const videoElement = document.createElement('video');
+                    videoElement.src = project.video;
+                    videoElement.controls = true;
+                    videoElement.style.width = '100%';
+                    videoElement.preload = 'metadata';
+                    // error handling
+                    videoElement.onerror = function() {
+                        console.error('Video failed to load:', project.video);
+                        const errorMsg = document.createElement('p');
+                        errorMsg.style.color = 'var(--secondary)';
+                        errorMsg.textContent = 'video failed to load';
+                        modalMedia.appendChild(errorMsg);
+                    };
+                    modalMedia.appendChild(videoElement);
+                }
             }
             
             // Add images

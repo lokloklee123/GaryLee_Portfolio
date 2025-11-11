@@ -752,6 +752,35 @@
             background: var(--bg-dark);
         }
 
+        /* YouTube Video Container */
+        .youtube-video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 15px;
+            border: 2px solid rgba(0, 255, 255, 0.2);
+            box-shadow: 0 10px 30px rgba(0, 255, 255, 0.2);
+            background: var(--bg-dark);
+            margin-bottom: 20px;
+        }
+
+        .youtube-video-container:hover {
+            border-color: var(--primary);
+            box-shadow: 0 15px 40px rgba(0, 255, 255, 0.4);
+        }
+
+        .youtube-embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 15px;
+        }
+
         .modal-text {
             color: var(--text-primary);
             line-height: 1.8;
