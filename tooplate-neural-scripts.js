@@ -162,11 +162,14 @@
                 description: "2DHappyTravel",
                 images: [
                     "assets/images/projects/2dhappytravel/2Dp1.png",
+                    "assets/images/projects/2dhappytravel/2Dp2.png"
                 ],
                 video: "https://youtu.be/VLZAA7F4CW0",
                 content: `
-                    <h3>Description</h3>
-                    <p>2DHappyTravel is a 2D side-scrolling game that I developed using Unity Engine. It is a simple game that allows the player to control a character and navigate through a world. Including platforming elements and battle system.</p>
+                    <h3>Overview</h3>
+                    <p>2DHappyTravel is a 2D side-scrolling game that I developed using Unity Engine with my groupmates. 
+                    It is a simple game that allows the player to control a character and navigate through a world. 
+                    Including platforming elements and battle system.</p>
                     
                     <h3>Key Features</h3>
                     <ul>
@@ -182,128 +185,93 @@
                 `
             },
             {
-                title: "Quantum UI",
-                description: "Experimental interface system inspired by quantum computing principles",
+                title: "ReelSteel",
+                description: "ReelSteel",
                 images: [
-                    "assets/images/projects/quantum-ui/image1.jpg"
+                    "assets/images/projects/ReelSteel/RSp1.png",
+                    "assets/images/projects/ReelSteel/RSp2.png"
                 ],
-                video: "assets/videos/projects/quantum-ui/demo.mp4",
+                video: [
+                    "https://youtu.be/IBaK5M9-1vc",
+                    "https://youtu.be/6Dz2cuqOZa8"
+                ],
                 content: `
-                    <h3>Project Overview</h3>
-                    <p>Quantum UI represents a revolutionary approach to user interface design, drawing inspiration from quantum computing principles to create an experimental interface system that challenges traditional interaction paradigms.</p>
+                    <h3>Overview</h3>
+                    <p>ReelSteel is a VR boxing game that developed via using Unity Engine with my groupmates. 
+                    To provide the player with a realistic boxing experience, the game is developed in a first-person perspective.
+                    Allows the player to control a character to fight against the opponent in a boxing ring.</p>
                     
                     <h3>Key Features</h3>
                     <ul>
-                        <li>Quantum-inspired state management</li>
-                        <li>Superposition-based UI components</li>
-                        <li>Entanglement-driven interactions</li>
-                        <li>Probabilistic rendering system</li>
-                        <li>Adaptive interface morphing</li>
+                        <li>VR boxing game</li>
+                        <li>First-person perspective to control the character to punch or dodge</li>
+                        <li>Realistic boxing experience with other players</li>
+                        <li>Multiple boxing moves</li>
                     </ul>
                     
                     <h3>Technologies Used</h3>
-                    <p>Developed using Vue.js, WebGL for advanced graphics, and custom quantum simulation algorithms to create unique user experiences.</p>
+                    <p>Developed using Unity Engine, C# for programming, and Oracle VR device for the game development.</p>
                 `
             },
             {
-                title: "Cyber Portal",
-                description: "Immersive web experience with advanced WebGL and Three.js effects",
+                title: "MealTheory",
+                description: "MealTheory",
                 images: [
-                    "assets/images/projects/cyber-portal/image1.jpg",
-                    "assets/images/projects/cyber-portal/image2.jpg"
+                    "assets/images/projects/MealTheory/MTp1.png",
+                    "assets/images/projects/MealTheory/MTp2.png"
                 ],
-                video: null,
+                video: "https://youtu.be/tKOW-CyVin8",
                 content: `
-                    <h3>Project Overview</h3>
-                    <p>Cyber Portal is an immersive web experience that combines cutting-edge WebGL technology with Three.js to create stunning 3D environments and interactive cyberpunk-themed worlds.</p>
+                    <h3>Overview</h3>
+                    <p>MealTheory is a 3D cooking simulator that I developed using Unity Engine with my groupmates. 
+                    It is a simple game that allows the player to cook the food by themselves and try to complete the goal.
+                    A clean user interface and graphics interaction in game to provide a good gameplay experience.</p>
                     
                     <h3>Key Features</h3>
                     <ul>
-                        <li>Real-time 3D rendering with WebGL</li>
-                        <li>Interactive particle systems</li>
-                        <li>Dynamic lighting and shadows</li>
-                        <li>VR/AR compatibility</li>
-                        <li>Procedural environment generation</li>
+                        <li>3D cooking simulator base on real food recipe</li>
+                        <li>Interactive cooking process</li>
+                        <li>Realistic cooking experience</li>
+                        <li>Multiple cooking recipes</li>
                     </ul>
                     
                     <h3>Technologies Used</h3>
-                    <p>Built with Three.js, WebGL, GLSL shaders, and modern JavaScript frameworks to deliver high-performance 3D experiences in the browser.</p>
+                    <p>Built with Unity Engine, C# for programming, 3D modeling for the game art by ourselves.</p>
                 `
             },
             {
-                title: "Data Stream",
-                description: "Live data visualization platform with real-time streaming capabilities",
+                title: "The Grind",
+                description: "A Job-search website with different roles",
                 images: [
-                    "assets/images/projects/data-stream/image1.jpg"
+                    "assets/images/projects/TheGrind/TGp1.png",
+                    "assets/images/projects/TheGrind/TGp2.png"
                 ],
-                video: "assets/videos/projects/data-stream/demo.mp4",
+                video: "https://youtu.be/PkiGqUPSXBc",
                 content: `
-                    <h3>Project Overview</h3>
-                    <p>Data Stream is a powerful live data visualization platform designed to handle massive streams of real-time data with minimal latency, providing instant insights and analytics.</p>
+                    <h3>Overview</h3>
+                    <p>The Grind is a Job-search website that provide over three different roles 
+                    including Admin, Emplyoer and Job-seekeer.
+                    Provide some simple and useful function like sorting, filtering and searching for job-seeker.
+                    Provide employers with the functionality to create job postings, 
+                    along with a unique custom question feature, 
+                    enabling employers to screen suitable candidates based on applicants' responses.
+                    Additionally, offer job seekers a machine learning matching function that utilizes NLP and data analysis to match and recommend the most suitable jobs to users based on the attributes provided in their profiles.
+                    </p>
                     
                     <h3>Key Features</h3>
                     <ul>
-                        <li>Real-time data streaming and processing</li>
-                        <li>Multiple visualization types (charts, graphs, heatmaps)</li>
-                        <li>Low-latency WebSocket connections</li>
-                        <li>Scalable architecture for high throughput</li>
-                        <li>Customizable alerting system</li>
+                        <li>User-Friendly Job Searching Website</li>
+                        <li>Employer Job Creation & Custom Screening</li>
+                        <li>AI-Powered Job Matching</li>
+                        <li>Bidirectional Matching Efficiency</li>
+                        <li>Profile-Driven Personalization</li>
                     </ul>
                     
                     <h3>Technologies Used</h3>
-                    <p>Powered by Node.js for backend streaming, Apache Kafka for message queuing, and D3.js/Chart.js for advanced visualizations.</p>
+                    <p>Powered by Node.js for backend streaming, Angular for frontend user interface, and MySQL for data storage.</p>
                 `
             },
-            {
-                title: "Neon Grid",
-                description: "Cyberpunk-themed design system with glowing components and animations",
-                images: [
-                    "assets/images/projects/neon-grid/image1.jpg",
-                    "assets/images/projects/neon-grid/image2.jpg",
-                    "assets/images/projects/neon-grid/image3.jpg"
-                ],
-                video: null,
-                content: `
-                    <h3>Project Overview</h3>
-                    <p>Neon Grid is a comprehensive cyberpunk-themed design system featuring glowing components, smooth animations, and a cohesive visual language perfect for futuristic interfaces.</p>
-                    
-                    <h3>Key Features</h3>
-                    <ul>
-                        <li>Comprehensive component library</li>
-                        <li>Custom CSS animations and effects</li>
-                        <li>Neon glow and lighting effects</li>
-                        <li>Responsive grid system</li>
-                        <li>Theme customization tools</li>
-                    </ul>
-                    
-                    <h3>Technologies Used</h3>
-                    <p>Created with SCSS, CSS animations, JavaScript for interactive components, and a focus on performance and accessibility.</p>
-                `
-            },
-            {
-                title: "Matrix View",
-                description: "3D data exploration tool with virtual reality integration support",
-                images: [
-                    "assets/images/projects/matrix-view/image1.jpg"
-                ],
-                video: "assets/videos/projects/matrix-view/demo.mp4",
-                content: `
-                    <h3>Project Overview</h3>
-                    <p>Matrix View is an innovative 3D data exploration tool that allows users to navigate and interact with complex datasets in immersive three-dimensional space, with full VR support.</p>
-                    
-                    <h3>Key Features</h3>
-                    <ul>
-                        <li>3D data visualization and navigation</li>
-                        <li>VR/AR headset compatibility</li>
-                        <li>Interactive data manipulation</li>
-                        <li>Multi-dimensional data representation</li>
-                        <li>Collaborative viewing sessions</li>
-                    </ul>
-                    
-                    <h3>Technologies Used</h3>
-                    <p>Built with A-Frame for VR, Three.js for 3D rendering, WebXR APIs, and modern JavaScript frameworks for seamless cross-platform experiences.</p>
-                `
-            }
+            
         ];
 
         // Function to extract YouTube video ID and convert to embed URL
@@ -363,48 +331,52 @@
             
             // Add video if available
             if (project.video) {
-                if (isYouTubeUrl(project.video)) {
-                    // YouTube video - use iframe
-                    const embedUrl = getYouTubeEmbedUrl(project.video);
-                    if (embedUrl) {
-                        const iframeContainer = document.createElement('div');
-                        iframeContainer.className = 'youtube-video-container';
-                        
-                        const iframe = document.createElement('iframe');
-                        iframe.src = embedUrl;
-                        iframe.title = 'YouTube video player';
-                        iframe.frameBorder = '0';
-                        iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
-                        iframe.referrerPolicy = 'strict-origin-when-cross-origin';
-                        iframe.allowFullscreen = true;
-                        iframe.className = 'youtube-embed';
-                        
-                        iframeContainer.appendChild(iframe);
-                        modalMedia.appendChild(iframeContainer);
+                const videoList = Array.isArray(project.video) ? project.video : [project.video];
+                const videoGrid = document.createElement('div');
+                videoGrid.className = 'modal-video-grid';
+
+                videoList.forEach((videoUrl) => {
+                    if (!videoUrl) return;
+                    if (isYouTubeUrl(videoUrl)) {
+                        const embedUrl = getYouTubeEmbedUrl(videoUrl);
+                        if (embedUrl) {
+                            const iframeContainer = document.createElement('div');
+                            iframeContainer.className = 'youtube-video-container';
+
+                            const iframe = document.createElement('iframe');
+                            iframe.src = embedUrl;
+                            iframe.title = 'YouTube video player';
+                            iframe.frameBorder = '0';
+                            iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+                            iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+                            iframe.allowFullscreen = true;
+                            iframe.className = 'youtube-embed';
+
+                            iframeContainer.appendChild(iframe);
+                            videoGrid.appendChild(iframeContainer);
+                        } else {
+                            const errorMsg = document.createElement('p');
+                            errorMsg.style.color = 'var(--secondary)';
+                            errorMsg.textContent = 'Invalid YouTube URL';
+                            videoGrid.appendChild(errorMsg);
+                        }
                     } else {
-                        console.error('Failed to extract YouTube video ID from:', project.video);
-                        const errorMsg = document.createElement('p');
-                        errorMsg.style.color = 'var(--secondary)';
-                        errorMsg.textContent = 'Invalid YouTube URL';
-                        modalMedia.appendChild(errorMsg);
+                        const videoElement = document.createElement('video');
+                        videoElement.src = videoUrl;
+                        videoElement.controls = true;
+                        videoElement.style.width = '100%';
+                        videoElement.preload = 'metadata';
+                        videoElement.onerror = function() {
+                            const errorMsg = document.createElement('p');
+                            errorMsg.style.color = 'var(--secondary)';
+                            errorMsg.textContent = 'video failed to load';
+                            this.replaceWith(errorMsg);
+                        };
+                        videoGrid.appendChild(videoElement);
                     }
-                } else {
-                    // Regular video file - use video element
-                    const videoElement = document.createElement('video');
-                    videoElement.src = project.video;
-                    videoElement.controls = true;
-                    videoElement.style.width = '100%';
-                    videoElement.preload = 'metadata';
-                    // error handling
-                    videoElement.onerror = function() {
-                        console.error('Video failed to load:', project.video);
-                        const errorMsg = document.createElement('p');
-                        errorMsg.style.color = 'var(--secondary)';
-                        errorMsg.textContent = 'video failed to load';
-                        modalMedia.appendChild(errorMsg);
-                    };
-                    modalMedia.appendChild(videoElement);
-                }
+                });
+
+                modalMedia.appendChild(videoGrid);
             }
             
             // Add images
